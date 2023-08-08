@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+        <title>Portfolio</title>
+        
+    </head>
+    <body>
+      
+        <input id="text" type="text" onfocus="this.value=''" value="clear">
+        <button id="button">submit</button>
+        <script>
+          document.getElementById("button").onclick = function(){
+            var a = 0;
+            a = document.getElementById("text").value
+            var b = Math.floor(Math.random() * 5) + 1;
+            if( a == b ){
+              alert("RIGHT")
+            }
+            else{
+              alert("Not right try it again")   
+            }    
+          }
+          document.getElementById("submit").reset();
+        </script>
+
+    </body>
+</html>
